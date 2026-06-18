@@ -1,304 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distraction Log</title>
-    <style>
-        html {
-            font-family: 'Segoe UI', sans-serif, system-ui;
-        }
-
-        body, .config-root {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-        }
-
-        table {
-            border-collapse: collapse;
-            max-width: 80%;
-            margin: 1em 0;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-
-        th,
-        td {
-            border: 1px solid #d0d7de;
-            padding: 6px 13px;
-            text-align: left;
-            max-width: 40%;
-        }
-
-        th {
-            background-color: #f6f8fa;
-            font-weight: 600;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f6f8fa;
-        }
-
-        tr:hover {
-            background-color: #eef2f6;
-        }
-
-        /* Dark mode optional */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #000000;
-                color: white;
-            }
-
-            table {
-                color: #c9d1d9;
-            }
-
-            th,
-            td {
-                border-color: #30363d;
-            }
-
-            th {
-                background-color: #161b22;
-            }
-
-            tr:nth-child(even) {
-                background-color: #0d1117;
-            }
-
-            tr:hover {
-                background-color: #1f2937;
-            }
-        }
-
-
-    </style>
-    <style>
-        body {
-            padding-top: 32px;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f6f8fa;
-            color: #24292f;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 28px;
-            font-weight: 700;
-        }
-
-        .config-root {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            width: 100%;
-            max-width: 420px;
-
-            background: white;
-            padding: 24px;
-            border: 1px solid #d0d7de;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-            gap: 16px;
-        }
-
-
-        .config-root > div:first-child {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            width: 100%;
-            justify-content: flex-start;
-
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-
-        label {
-            cursor: pointer;
-        }
-
-        textarea {
-            width: 100%;
-            min-height: 440px;
-            resize: vertical;
-
-            padding: 12px;
-            box-sizing: border-box;
-
-            font-size: 14px;
-            line-height: 1.5;
-            font-family: Consolas, monospace;
-
-            border: 1px solid #d0d7de;
-            border-radius: 8px;
-            background: #ffffff;
-            color: #24292f;
-
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        textarea:focus {
-            outline: none;
-            border-color: #0969da;
-            box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
-        }
-
-        button {
-            width: 100%;
-            padding: 12px 16px;
-
-            border: none;
-            border-radius: 8px;
-
-            background: #2da44e;
-            color: white;
-
-            font-size: 15px;
-            font-weight: 600;
-
-            cursor: pointer;
-
-            transition: background 0.2s, transform 0.1s;
-        }
-
-        button:hover {
-            background: #2c974b;
-        }
-
-        button:active {
-            transform: scale(0.98);
-        }
-
-        textarea[hidden] {
-            display: none !important;
-        }
-
-        footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            width: stretch;
-            height: 12em;
-            margin-top: 20px;
-            background: #cad7fb;
-            padding: 32px 16px;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-        }
-
-        .vertical-divisory {
-            width: 2px;
-            height: stretch;
-            background: #000b;
-        }
-
-        .footer-links a[href] {
-            color: #123;
-            margin: 12px 0px;
-            transition: 0.2s;
-        }
-
-        .footer-links a[href]:hover {
-            transform: scale(1.05);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #0d1117;
-                color: #c9d1d9;
-            }
-
-            .config-root {
-                background: #161b22;
-                border-color: #30363d;
-                box-shadow: none;
-            }
-
-            textarea {
-                background: #0d1117;
-                color: #c9d1d9;
-                border-color: #30363d;
-            }
-
-            textarea:focus {
-                border-color: #2f81f7;
-                box-shadow: 0 0 0 3px rgba(47, 129, 247, 0.2);
-            }
-
-            button {
-                background: #238636;
-            }
-
-            button:hover {
-                background: #2ea043;
-            }
-
-            footer {
-                background: #1a373b;
-            }
-            
-            .vertical-divisory {
-                background: #fffb;
-            }
-            
-            .footer-links a[href] {
-                color: white;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distraction Log</title>
+<style>th,tr:nth-child(2n){background-color:#f6f8fa}html{font-family:'Segoe UI',sans-serif,system-ui}.config-root,body{display:flex;flex-direction:column;align-content:center;align-items:center}table{border-collapse:collapse;max-width:80%;margin:1em 0;font-family:Arial,sans-serif;font-size:14px}td,th{border:1px solid #d0d7de;padding:6px 13px;text-align:left;max-width:40%}th{font-weight:600}tr:hover{background-color:#eef2f6}@media (prefers-color-scheme:dark){body{background:#000;color:#fff}table{color:#c9d1d9}td,th{border-color:#30363d}th{background-color:#161b22}tr:nth-child(2n){background-color:#0d1117}tr:hover{background-color:#1f2937}}</style>
+<style>.config-root,textarea{background:#fff;width:100%}body,textarea{color:#24292f}button,label{cursor:pointer}.config-root,.footer-links,body,footer{display:flex}body{padding-top:32px;margin:0;font-family:Arial,sans-serif;background:#f6f8fa;flex-direction:column;align-items:center}h1{margin-bottom:20px;font-size:28px;font-weight:700}.config-root{flex-direction:column;align-items:center;max-width:420px;padding:24px;border:1px solid #d0d7de;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);gap:16px}.config-root>div:first-child{display:flex;align-items:center;gap:10px;width:100%;justify-content:flex-start;font-size:16px;font-weight:600}input[type=checkbox]{width:18px;height:18px;cursor:pointer}textarea{min-height:440px;resize:vertical;padding:12px;box-sizing:border-box;font-size:14px;line-height:1.5;font-family:Consolas,monospace;border:1px solid #d0d7de;border-radius:8px;transition:border-color .2s,box-shadow .2s}textarea:focus{outline:0;border-color:#0969da;box-shadow:0 0 0 3px rgba(9,105,218,.15)}button{width:100%;padding:12px 16px;border:none;border-radius:8px;background:#2da44e;color:#fff;font-size:15px;font-weight:600;transition:background .2s,transform .1s}button:hover{background:#2c974b}button:active{transform:scale(.98)}textarea[hidden]{display:none!important}footer{align-items:center;justify-content:space-evenly;width:stretch;height:12em;margin-top:20px;background:#cad7fb;padding:32px 16px}.footer-links{flex-direction:column;align-items:center;align-content:center;justify-content:center}.vertical-divisory{width:2px;height:stretch;background:#000b}.footer-links a[href]{color:#123;margin:12px 0;transition:.2s}.footer-links a[href]:hover{transform:scale(1.05)}@media (prefers-color-scheme:dark){body,textarea{background:#0d1117;color:#c9d1d9}.config-root{background:#161b22;border-color:#30363d;box-shadow:none}textarea{border-color:#30363d}textarea:focus{border-color:#2f81f7;box-shadow:0 0 0 3px rgba(47,129,247,.2)}button{background:#238636}button:hover{background:#2ea043}footer{background:#1a373b}.vertical-divisory{background:#fffb}.footer-links a[href]{color:#fff}}</style>
 </head>
 <body>
-    <h1>Your Report:</h1>
-    <p id="report">Calculating...</p>
-    <br>
-    <h1>Your Distraction Log</h1>
-    <a id="lazy_log" style="
-        white-space: pre;
-    "></a>
-    <table id="log_table">
-    </table>
-    <br>
-    <br>
-    <h1 id="config_title">Config</h1>
-    <div class="config-root" id="config_div" hidden>
-        <div><input type="checkbox" id="iswhitelist"><label>Whitelist</label></div>
-        <textarea id="blacklist"></textarea>
-        <textarea id="whitelist" hidden></textarea>
-        <button id="save">Save</button>
-    </div>
-    <footer>
-        <p class="footer-p">Made by TinyVirtual | 2026</p>
-        <div class="vertical-divisory"></div>
-        <div class="footer-links">
-            <a href="https://tinyvirtual.github.io/">My github.io</a>
-            <a href="https://github.com/TinyVirtual">My Github</a>
-            <a href="/about.html">About</a>
-        </div>
-    </footer>
-    <script src="log_scr.js"></script>
+<h1>Your Report:</h1>
+<p id="report">Calculating...</p>
+<br>
+<h1>Your Distraction Log</h1>
+<a id="lazy_log" style="
+white-space: pre;
+"></a>
+<table id="log_table">
+</table>
+<br>
+<br>
+<h1 id="config_title">Config</h1>
+<div class="config-root" id="config_div" hidden>
+<div><input type="checkbox" id="iswhitelist"><label>Whitelist</label></div>
+<textarea id="blacklist"></textarea>
+<textarea id="whitelist" hidden></textarea>
+<button id="save">Save</button>
+</div>
+<footer>
+<p class="footer-p">Made by TinyVirtual | 2026</p>
+<div class="vertical-divisory"></div>
+<div class="footer-links">
+<a href="https://tinyvirtual.github.io/">My github.io</a>
+<a href="https://github.com/TinyVirtual">My Github</a>
+<a href="/about.html">About</a>
+</div>
+</footer>
+<script src="log_scr.js"></script>
 </body>
 </html>

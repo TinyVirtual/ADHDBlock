@@ -16,7 +16,7 @@ Well... i got a _possible_ $${ \color{gold} \Huge \textsf{SOLUTION!} }$$
 
 ## Introducing to you the extension
 
-I recently got warned in my job for beeing too much distracted watching youtube, so I went on a hunt for a good adhd block tool, but the ones I've tested were either paid, or were bloated full of ads, or weren't working properly
+I recently got warned in my job for being too much distracted watching youtube, so I went on a hunt for a good adhd block tool, but the ones I've tested were either paid, or were bloated full of ads, or weren't working properly
 
 So i took a step further and made my own, and I want to share the source code with you all :)
 
@@ -40,7 +40,7 @@ This extension is designed for Chrommium based browsers only, such as:
 
 -----
 ### Why do I need to put a reason?
-Because it forces your brain to think and reasonate, and if you just put "aaaaa", you'll still have to wait for 15 seconds, meaning you gotta think in a valid reason <br>
+Because it forces your brain to think and reason, and if you just put "aaaaa", you'll still have to wait for 15 seconds, meaning you gotta think in a valid reason <br>
 > Also, if you keep putting "aaaaa" and entering the page anyways, I recomend you to simply disable, because it will just annoy you instead of making you more productive
 
 You can also see your history of distractions:

@@ -74,9 +74,9 @@ $${ \color{gray}\tiny\textsf{(currently not yet avaliable on chrome webstore, I 
 ### How to install using the developer tools
 
 > [!WARNING]
-> **BEFORE DOWLOADING, READ THE [PRIVACY DISCLAIMER](https://github.com/TinyVirtual/ADHDBlock/blob/main/PRIVACY.md)**
+> **BEFORE DOWNLOADING, READ THE [PRIVACY DISCLAIMER](https://github.com/TinyVirtual/ADHDBlock/blob/main/PRIVACY.md)**
 > 
-> **I AM NOT RESPONSIBE FOR ANY MISSUSE OF DEVELOPER TOOLS**​
+> **I AM NOT RESPONSIBLE FOR ANY MISSUSE OF DEVELOPER MODE EXTENSIONS**​
 > 
 > **MY EXTENSION IS PROVIDED AS IT IS AND ANY HARM CAUSED BY MODIFICATION VOIDS MY RESPONSIBILITY​**
 

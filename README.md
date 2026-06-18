@@ -63,7 +63,7 @@ $${ \color{gray}\tiny\textsf{(currently not yet avaliable on chrome webstore, I 
 2. Extract it somewhere safe (Example: `C:\Users\User\Documents\Extensions\ADHDBlock\ ` or `/home/user/Documents/Extensions/ADHDBlock/`)
 3. Go to `chrome://extensions/` and toogle "Developer Mode" to on
    - Disclaimer: This can be used by anyone to make phishing or scam, verify every extension before ever installing
-4. Click in "Load Unpacked" and select the folder with name "ADHDBlock-main"
+4. Click in "Load Unpacked" and select the folder with path name "ADHDBlock-main/source/"
    - If there is another one inside with the same name, use that one instead
 5. Configure by clicking on the extension icon and you're ready to go
 

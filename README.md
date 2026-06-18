@@ -20,16 +20,23 @@ I recently got warned in my job for beeing too much distracted watching youtube,
 
 So i took a step further and made my own, and I want to share the source code with you all :)
 
+This extension is designed for Chrommium based browsers only, such as:
+- Chrome
+- Edge
+- Opera
+- Brave
+- etc...
+
 -----
 
 ### This extension blocks distraction pages, like YouTube for example, take a look:
 
-<img src="https://github.com/TinyVirtual/ADHDBlock/blob/main/images/blocking.gif?raw=true" alt="blocking.gif" width="600"/>
+<img src="https://github.com/TinyVirtual/ADHDBlock/blob/main/images/blocking.gif?raw=true" alt="blocking.gif: User tries to access youtube but is blocked by the extension" width="600"/>
 
 -----
 ### But what if you still need to access? What if your work is already done? Well you can simply fill the form and enjoy 5 minutes of freedom:
 
-<img src="https://github.com/TinyVirtual/ADHDBlock/blob/main/images/visiting.gif?raw=true" alt="visiting.gif" width="600"/>
+<img src="https://github.com/TinyVirtual/ADHDBlock/blob/main/images/visiting.gif?raw=true" alt="visiting.gif: User fills the form to access youtube and have 5 minutes of access" width="600"/>
 
 -----
 ### Why do I need to put a reason?
@@ -38,8 +45,22 @@ Because it forces your brain to think and reasonate, and if you just put "aaaaa"
 
 You can also see your history of distractions:
 
-<img src="https://github.com/TinyVirtual/ADHDBlock/blob/main/images/view_log_%26_settings.gif?raw=true" alt="view_log_%26_settings.gif" width="600"/>
+<img src="https://github.com/TinyVirtual/ADHDBlock/blob/main/images/view_log_%26_settings.gif?raw=true" alt="view_log_%26_settings.gif: User views distraction log" width="600"/>
 
+-----
+
+## Effectiveness
+
+**Here is a little table of how was my experience at work:**
+
+| * | Before | After |
+| :--- | --- | --- | 
+| Times distracted | Over 20 | Less than 15 |
+| Work Speed | Slowly | Normal |
+| Productivity | Small | Medium |
+| Warnings | 4 | 1 |
+| Issues Done | 3 | 7 |
+| Issue Solving Speed | ~2 Hours | ~30 Minutes |
 
 
 -----

@@ -11,7 +11,8 @@
                 "myinstants", "game", 
                 "discord", "steampowered.com", 
                 "steamcommunity.com", "xbox.com", 
-                "minecraft", ".github.io"
+                "minecraft", ".github.io", "bluesky",
+                "namemc"
             ],  
             "whitelist": [
                 "google", "git.", 
